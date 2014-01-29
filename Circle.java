@@ -73,14 +73,4 @@ public class Circle extends Shape {
 		return String.format("Origin: (%d, %d) Radius: %d Area:"
 				+ " %.2f",  origin.x, origin.y, getRadius(), getArea());
 	}
-	
-	public CircleTransfer getCircleTransferObject() {
-		CircleTransfer circleTransfer = new CircleTransfer();
-		circleTransfer.setRadius(radius);
-		circleTransfer.setxPos(origin.x);
-		circleTransfer.setyPos(origin.y);
-		
-		return circleTransfer;
-	}
-
 } // End Circle class definition
