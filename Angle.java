@@ -43,6 +43,14 @@ public class Angle {
 	public boolean isAcute() {
 		return ((degrees < 90) && (degrees >= 0));
 	}
+
+	public boolean isStraight() {
+		return degrees == 180;
+	}
+
+	public boolean isReflex() {
+		return degree > 180;
+	}
 	
 	@Override
 	public boolean equals(Object obj) {
